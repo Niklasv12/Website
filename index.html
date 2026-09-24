@@ -75,7 +75,7 @@
 
     <section id="faq" class="bg-white px-6 py-24 lg:px-10 lg:py-28"><div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.65fr_1.35fr]"><div><p class="eyebrow text-xs font-bold uppercase text-terracotta">FAQ</p><h2 class="mt-4 font-display text-4xl sm:text-5xl">Ihre Fragen,<br><span class="text-pine">meine Antworten.</span></h2></div><div class="divide-y divide-ink/15 border-t border-ink/15"><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Wo findet die Mediation / das Coaching statt?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Ich biete die Mediation und das Coaching sowohl online als auch vor Ort an. Gemeinsam können wir überlegen, welches Setting sich gut eignet.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Wie trete ich am besten in Kontakt?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Die einfachste und beste Kontaktmöglichkeit ist per Mail. Meine Mailadresse finden Sie unter dem Reiter „Kontakt“.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Welche Informationen sind bei Kontaktaufnahme wichtig?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Für mich sind am Anfang vor allem die groben Eckdaten relevant. Am besten schreiben Sie in der Kontaktaufnahme, ob Sie sich für Mediation oder systemisches Coaching interessieren, welche Tage und Zeiten sich für die gemeinsamen Termine eignen und eine grobe Umschreibung des Anliegens.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Welche Themen eignen sich nicht für eine Mediation oder Coaching?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Der persönliche Leidensdruck kann unter Umständen sehr groß werden. Jedoch bin ich keine ausgebildete Psychotherapeutin und kann daher weder psychische Erkrankungen diagnostizieren noch behandeln. Falls die Themen meine Kompetenzen übersteigen sollten, können wir jedoch gemeinsam passende Unterstützungsmaßnahmen besprechen.</p></details></div></div></section>
 
-    <section id="kontakt" class="bg-terracotta px-6 py-24 text-white lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><p class="eyebrow text-xs font-bold uppercase text-white/70">Kontakt</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Lassen Sie uns<br>ins Gespräch kommen.</h2><p class="mt-7 max-w-md leading-7 text-white/80">Sie möchten mehr erfahren oder einen Termin vereinbaren? Schreiben Sie mir gerne. Ich freue mich auf Ihre Nachricht.</p><a href="mailto:verhaag.mediation-coaching@web.de" class="mt-8 inline-block break-all text-sm font-bold underline underline-offset-4">verhaag.mediation-coaching@web.de</a></div><form action="#" method="post" class="rounded-2xl bg-white p-6 text-ink shadow-2xl sm:p-9"><div class="grid gap-6 sm:grid-cols-2"><div><label for="name" class="text-sm font-bold">Name</label><input id="name" name="name" required type="text" autocomplete="name" class="mt-2 w-full border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="Ihr Name"></div><div><label for="email" class="text-sm font-bold">E-Mail</label><input id="email" name="email" required type="email" autocomplete="email" class="mt-2 w-full border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="ihre@email.de"></div></div><div class="mt-7"><label for="message" class="text-sm font-bold">Nachricht</label><textarea id="message" name="message" required rows="4" class="mt-2 w-full resize-none border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="Worum geht es Ihnen?"></textarea></div><button type="submit" class="mt-8 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white transition hover:bg-pine">Nachricht senden</button></form></div></section>
+    <section id="kontakt" class="bg-terracotta px-6 py-24 text-white lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><p class="eyebrow text-xs font-bold uppercase text-white/70">Kontakt</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Lassen Sie uns<br>ins Gespräch kommen.</h2><p class="mt-7 max-w-md leading-7 text-white/80">Sie möchten mehr erfahren oder einen Termin vereinbaren? Schreiben Sie mir gerne. Ich freue mich auf Ihre Nachricht.</p><a href="mailto:verhaag.mediation-coaching@web.de" class="mt-8 inline-block break-all text-sm font-bold underline underline-offset-4">verhaag.mediation-coaching@web.de</a></div><form id="contact-form" class="rounded-2xl bg-white p-6 text-ink shadow-2xl sm:p-9"><div class="grid gap-6 sm:grid-cols-2"><div><label for="name" class="text-sm font-bold">Name</label><input id="name" name="name" required type="text" autocomplete="name" class="mt-2 w-full border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="Ihr Name"></div><div><label for="email" class="text-sm font-bold">E-Mail</label><input id="email" name="email" required type="email" autocomplete="email" class="mt-2 w-full border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="ihre@email.de"></div></div><div class="mt-7"><label for="message" class="text-sm font-bold">Nachricht</label><textarea id="message" name="message" required rows="4" class="mt-2 w-full resize-none border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="Worum geht es Ihnen?"></textarea></div><button type="submit" class="mt-8 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white transition hover:bg-pine">Nachricht senden</button></form></div></section>
   </main>
   <section id="impressum" class="bg-paper px-6 py-20 text-ink lg:px-10 lg:py-28">
     <div class="mx-auto max-w-4xl">
@@ -99,5 +99,33 @@
     </div>
   </section>
   <footer class="bg-ink px-6 py-8 text-white/55 lg:px-10"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 text-xs sm:flex-row"><p>© 2026 Lisa Verhaag · Mediation & Coaching</p><div class="flex gap-5"><a href="#impressum" class="hover:text-white">Impressum</a><a href="#" class="hover:text-white">Datenschutz</a></div></div></footer>
+
+  <script>
+    const contactForm = document.getElementById('contact-form');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+          return;
+        }
+
+        const subject = encodeURIComponent('Kontaktanfrage von ' + name);
+        const body = encodeURIComponent(
+          'Name: ' + name + '\n' +
+          'E-Mail: ' + email + '\n\n' +
+          'Nachricht:\n' + message
+        );
+
+        window.location.href = 'mailto:verhaag.mediation-coaching@web.de?subject=' + subject + '&body=' + body;
+        contactForm.reset();
+      });
+    }
+  </script>
 </body>
 </html>
