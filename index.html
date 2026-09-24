@@ -75,7 +75,7 @@
 
     <section id="faq" class="bg-white px-6 py-24 lg:px-10 lg:py-28"><div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.65fr_1.35fr]"><div><p class="eyebrow text-xs font-bold uppercase text-terracotta">FAQ</p><h2 class="mt-4 font-display text-4xl sm:text-5xl">Ihre Fragen,<br><span class="text-pine">meine Antworten.</span></h2></div><div class="divide-y divide-ink/15 border-t border-ink/15"><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Wo findet die Mediation / das Coaching statt?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Mediation und Coaching biete ich sowohl online als auch vor Ort an. Gemeinsam können wir überlegen, welches Setting für Sie am besten geeignet ist.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Wie trete ich am besten in Kontakt?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Die einfachste und beste Kontaktmöglichkeit ist per E-Mail. Meine E-Mail-Adresse finden Sie im Bereich „Kontakt“.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Welche Informationen sind bei Kontaktaufnahme wichtig?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Für mich sind am Anfang vor allem die groben Eckdaten relevant. Am besten schreiben Sie in der Kontaktaufnahme, ob Sie sich für Mediation oder systemisches Coaching interessieren, welche Tage und Zeiten sich für die gemeinsamen Termine eignen und eine grobe Umschreibung des Anliegens.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Welche Themen eignen sich nicht für eine Mediation oder Coaching?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Der persönliche Leidensdruck kann unter Umständen sehr groß werden. Jedoch bin ich keine ausgebildete Psychotherapeutin und kann daher weder psychische Erkrankungen diagnostizieren noch behandeln. Falls die Themen meine Kompetenzen übersteigen sollten, können wir jedoch gemeinsam passende Unterstützungsmaßnahmen besprechen.</p></details></div></div></section>
 
-    <section id="kontakt" class="bg-terracotta px-6 py-24 text-white lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><p class="eyebrow text-xs font-bold uppercase text-white/70">Kontakt</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Lassen Sie uns<br>ins Gespräch kommen.</h2><p class="mt-7 max-w-md leading-7 text-white/80">Sie möchten mehr erfahren oder einen Termin vereinbaren? Schreiben Sie mir gerne.<br>Ich freue mich auf Ihre Nachricht.</p><a href="mailto:verhaag.mediation-coaching@web.de" class="mt-8 inline-block break-all text-sm font-bold underline underline-offset-4">verhaag.mediation-coaching@web.de</a></div><form id="contact-form" action="https://formsubmit.co/ajax/verhaag.mediation-coaching@web.de" method="POST" class="rounded-2xl bg-white p-6 text-ink shadow-2xl sm:p-9">
+    <section id="kontakt" class="bg-terracotta px-6 py-24 text-white lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><p class="eyebrow text-xs font-bold uppercase text-white/70">Kontakt</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Lassen Sie uns<br>ins Gespräch kommen.</h2><p class="mt-7 max-w-md leading-7 text-white/80">Sie möchten mehr erfahren oder einen Termin vereinbaren? Schreiben Sie mir gerne.<br>Ich freue mich auf Ihre Nachricht.</p><a href="mailto:verhaag.mediation-coaching@web.de" class="mt-8 inline-block break-all text-sm font-bold underline underline-offset-4">verhaag.mediation-coaching@web.de</a></div><form action="https://formsubmit.co/verhaag.mediation-coaching@web.de" method="POST" class="rounded-2xl bg-white p-6 text-ink shadow-2xl sm:p-9">
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_subject" value="Neue Kontaktanfrage von der Website">
   <input type="hidden" name="_template" value="table">
@@ -105,47 +105,6 @@
   </section>
   <footer class="bg-ink px-6 py-8 text-white/55 lg:px-10"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 text-xs sm:flex-row"><p>© 2026 Lisa Verhaag · Mediation & Coaching</p><div class="flex gap-5"><a href="#impressum" class="hover:text-white">Impressum</a><a href="#" class="hover:text-white">Datenschutz</a></div></div></footer>
 
-  <script>
-    const contactForm = document.getElementById('contact-form');
 
-    if (contactForm) {
-      contactForm.addEventListener('submit', async function (event) {
-        event.preventDefault();
-
-        const formData = new FormData(contactForm);
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitButton ? submitButton.textContent : 'Nachricht senden';
-
-        if (submitButton) {
-          submitButton.disabled = true;
-          submitButton.textContent = 'Wird gesendet...';
-        }
-
-        try {
-          const response = await fetch(contactForm.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-
-          if (!response.ok) {
-            throw new Error('Request failed');
-          }
-
-          contactForm.reset();
-          alert('Ihre Nachricht wurde erfolgreich gesendet.');
-        } catch (error) {
-          alert('Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte senden Sie Ihre Anfrage direkt an verhaag.mediation-coaching@web.de.');
-        } finally {
-          if (submitButton) {
-            submitButton.disabled = false;
-            submitButton.textContent = originalText;
-          }
-        }
-      });
-    }
-  </script>
 </body>
 </html>
