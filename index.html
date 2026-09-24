@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lisa Verhaag - Mediation und Coaching für klare Gespräche, neue Perspektiven und tragfähige Lösungen.">
+  <title>Verhaag | Mediation & Coaching</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#4a514f', pine: '#78958a', mint: '#edf3ef', paper: '#fbf8f4', rose: '#f3ebe7', terracotta: '#c38b78' },
+          fontFamily: { display: ['Arial', 'sans-serif'], sans: ['Arial', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body, button, input, textarea { font-family: Arial, sans-serif; }
+    body { background: #fbf8f4; color: #4a514f; }
+    .paper-lines { background-image: linear-gradient(rgba(120, 149, 138, .07) 1px, transparent 1px); background-size: 100% 34px; }
+    .eyebrow { letter-spacing: .18em; }
+    section h2 { font-size: 3.75rem; line-height: 1.08; }
+    @media (max-width: 640px) { section h2 { font-size: 2.75rem; } }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <header class="fixed inset-x-0 top-0 z-20 border-b border-ink/10 bg-white/90 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-6 py-5 lg:flex-nowrap lg:px-10 lg:py-6" aria-label="Hauptnavigation">
+      <a href="#start" class="font-display text-2xl font-semibold tracking-tight text-ink">Lisa Verhaag</a>
+      <div class="mt-4 flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-3 text-xs font-bold text-ink/75 lg:mt-0 lg:w-auto lg:flex-nowrap lg:justify-end lg:gap-6 lg:text-sm">
+        <a href="#ansatz" class="transition hover:text-terracotta">Mein Ansatz</a>
+        <a href="#ueber-mich" class="transition hover:text-terracotta">Über Mich</a>
+        <a href="#mediation" class="transition hover:text-terracotta">Mediation</a>
+        <a href="#coaching" class="transition hover:text-terracotta">Coaching</a>
+        <a href="#faq" class="transition hover:text-terracotta">FAQ</a>
+        <a href="#kontakt" class="rounded-full bg-ink px-5 py-3 text-white transition hover:bg-pine">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="start" class="relative overflow-hidden bg-rose px-6 pb-12 pt-48 lg:px-10 lg:pb-20 lg:pt-56">
+      <div class="absolute right-0 top-0 h-full w-1/3 bg-white/25"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[.9fr_1.1fr]">
+        <div class="max-w-xl">
+          <h1 class="font-display text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl lg:text-6xl">Mediation &amp;<br>systemisches Coaching</h1>
+        </div>
+        <div class="relative mx-auto w-full max-w-2xl">
+          <img src="Bilder_website/Bild3.png" alt="Ruhiges Naturmotiv als Bild für neue Perspektiven" class="aspect-[5/4] w-full rounded-[2rem] object-cover brightness-[.97] saturate-[.85] shadow-2xl shadow-ink/15">
+        </div>
+      </div>
+    </section>
+
+    <section id="ansatz" class="bg-white px-6 pb-8 pt-24 lg:px-10 lg:pb-12 lg:pt-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-3xl"><p class="eyebrow text-xs font-bold uppercase text-terracotta">Mein Ansatz</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Gemeinsam neue Wege<br>sichtbar machen.</h2><p class="mt-7 text-lg leading-8 text-ink/70">Ich begleite Menschen, Teams und Gruppen dabei Konflikte zu lösen, neue Perspektiven einzunehmen und passende, individuelle Lösungen zu finden.</p><p class="mt-4 text-lg leading-8 text-ink/70">Dabei höre ich zu, frage nach, sortiere und schaffe Struktur, damit sich ein gemeinsamer Weg finden lässt und neue Ansätze sichtbar werden.</p></div>
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article class="overflow-hidden rounded-2xl bg-paper shadow-sm"><img src="Bilder_website/Empathie.png" alt="Empathie" class="aspect-[4/3] w-full object-cover brightness-[.98] saturate-[.85]"><div class="p-7"><h3 class="font-display text-2xl">Empathie</h3><p class="mt-4 text-sm leading-7 text-ink/65">Grundlage meiner Arbeit ist eine empathische und wertschätzende Haltung.</p></div></article>
+          <article class="overflow-hidden rounded-2xl bg-paper shadow-sm"><img src="Bilder_website/Lebenserfahrung.png" alt="Lebenserfahrung" class="aspect-[4/3] w-full object-cover brightness-[.98] saturate-[.85]"><div class="p-7"><h3 class="font-display text-2xl">Lebenserfahrung</h3><p class="mt-4 text-sm leading-7 text-ink/65">Mein Ansatz ist geprägt von langjährigen Erfahrungen in verschiedenen Bereichen.</p></div></article>
+          <article class="overflow-hidden rounded-2xl bg-paper shadow-sm"><img src="Bilder_website/Struktur.png" alt="Struktur" class="aspect-[4/3] w-full object-cover brightness-[.98] saturate-[.85]"><div class="p-7"><h3 class="font-display text-2xl">Struktur</h3><p class="mt-4 text-sm leading-7 text-ink/65">Teil der Arbeit ist es, Strukturen neu zu sortieren, aufzubrechen und neue zu schaffen.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber-mich" class="bg-white px-6 py-24 lg:px-10 lg:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[.9fr_1.1fr]"><div class="relative max-w-md"><div class="absolute -bottom-5 -right-5 h-32 w-32 rounded-full border border-terracotta/50"></div><img src="Bilder_website/Bild5.jpeg" alt="Lisa Verhaag" class="relative aspect-[4/5] w-full rounded-[2rem] object-cover object-[75%_0%] shadow-xl"></div><div class="max-w-2xl"><p class="eyebrow text-xs font-bold uppercase text-terracotta">Über mich</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Kommunikation, Landwirtschaft,<br>Berufserfahrung.</h2><h3 class="mt-8 font-display text-2xl text-ink">Wer bin ich und was hat mich geprägt?</h3><p class="mt-5 text-lg leading-8 text-ink/70">Aufgewachsen auf einem landwirtschaftlichen Betrieb haben mich Zusammenhalt, Verantwortung und Gemeinschaft von Beginn an geprägt. Meine Wurzeln und mein Studium der Agrarwissenschaften ebneten mir den beruflichen Weg, auf dem ich zunehmend Führungsverantwortung übernahm und Kommunikation in den Mittelpunkt rückte.</p><p class="mt-5 text-lg leading-8 text-ink/70">Mit der Ausbildung als Mediatorin und systemischer Coach konnte ich meine beruflichen und persönlichen Erfahrungen um fundiertes Wissen und methodische Kompetenzen erweitern und unterstütze nun mit viel Freude Menschen auf ihrem Weg.</p></div></div>
+    </section>
+
+    <section id="mediation" class="scroll-mt-32 bg-ink px-6 py-24 text-white lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[.9fr_1.1fr]"><div><p class="eyebrow text-xs font-bold uppercase text-mint">01 / Mediation</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Konflikte<br><span class="text-mint">klären.</span></h2><p class="mt-7 text-lg leading-8 text-white/75">Wenn unterschiedliche Interessen, Erwartungen oder Sichtweisen aufeinandertreffen hilft Mediation wieder miteinander ins Gespräch zu kommen.</p><h3 class="mt-8 font-display text-2xl text-mint">Mögliche Themen</h3><ul class="mt-4 grid gap-3 text-sm leading-7 text-white/70"><li class="border-l border-terracotta pl-4">Generationenkonflikte</li><li class="border-l border-terracotta pl-4">Betriebsübergabe, Betriebsentwicklung</li><li class="border-l border-terracotta pl-4">Berufliche Konflikte</li><li class="border-l border-terracotta pl-4">Teamentwicklung</li></ul></div><img src="Bilder_website/Prozess_Mediation.png" alt="Prozess und Begegnung in der Mediation" class="aspect-[4/3] w-full rounded-[2rem] bg-white p-4 object-contain brightness-[.95] saturate-[.8] shadow-2xl shadow-black/20"></div></section>
+
+    <section id="coaching" class="bg-mint px-6 py-24 lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[.9fr_1.1fr]"><div><p class="eyebrow text-xs font-bold uppercase text-terracotta">02 / Systemisches Coaching</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Veränderung<br>gestalten.</h2><p class="mt-7 text-lg leading-8 text-ink/75">Wenn Veränderungen, Entscheidungen oder persönliche und berufliche Herausforderungen anstehen, hilft systemisches Coaching dabei neue Perspektiven zu gewinnen und eigene Wege zu entwickeln.</p><h3 class="mt-8 font-display text-2xl text-pine">Mögliche Themen</h3><ul class="mt-4 space-y-3 text-sm leading-7 text-ink/70"><li class="border-l-2 border-terracotta pl-4">Berufliche Neuorientierung und Weiterentwicklung</li><li class="border-l-2 border-terracotta pl-4">Persönliche Veränderung</li><li class="border-l-2 border-terracotta pl-4">Entscheidungsfindung</li><li class="border-l-2 border-terracotta pl-4">Neuordnung von Arbeits- und Alltagsstrukturen</li></ul></div><img src="Bilder_website/Prozess_Systemisches_Coaching.png" alt="Prozess und Perspektiven im systemischen Coaching" class="aspect-[4/3] w-full rounded-[2rem] bg-white p-4 object-contain brightness-[.97] saturate-[.85] shadow-xl shadow-ink/10"></div></section>
+
+    <section id="faq" class="bg-white px-6 py-24 lg:px-10 lg:py-28"><div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.65fr_1.35fr]"><div><p class="eyebrow text-xs font-bold uppercase text-terracotta">FAQ</p><h2 class="mt-4 font-display text-4xl sm:text-5xl">Ihre Fragen,<br><span class="text-pine">meine Antworten.</span></h2></div><div class="divide-y divide-ink/15 border-t border-ink/15"><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Wo findet die Mediation / das Coaching statt?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Ich biete die Mediation und das Coaching sowohl online als auch vor Ort an. Gemeinsam können wir überlegen, welches Setting sich gut eignet.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Wie trete ich am besten in Kontakt?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Die einfachste und beste Kontaktmöglichkeit ist per Mail. Meine Mailadresse finden Sie unter dem Reiter „Kontakt“.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Welche Informationen sind bei Kontaktaufnahme wichtig?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Für mich sind am Anfang vor allem die groben Eckdaten relevant. Am besten schreiben Sie in der Kontaktaufnahme, ob Sie sich für Mediation oder systemisches Coaching interessieren, welche Tage und Zeiten sich für die gemeinsamen Termine eignen und eine grobe Umschreibung des Anliegens.</p></details><details class="group py-6"><summary class="flex cursor-pointer list-none items-center justify-between font-bold">Welche Themen eignen sich nicht für eine Mediation oder Coaching?<span class="text-2xl font-normal text-terracotta transition group-open:rotate-45">+</span></summary><p class="mt-4 max-w-2xl text-sm leading-7 text-ink/65">Der persönliche Leidensdruck kann unter Umständen sehr groß werden. Jedoch bin ich keine ausgebildete Psychotherapeutin und kann daher weder psychische Erkrankungen diagnostizieren noch behandeln. Falls die Themen meine Kompetenzen übersteigen sollten, können wir jedoch gemeinsam passende Unterstützungsmaßnahmen besprechen.</p></details></div></div></section>
+
+    <section id="kontakt" class="bg-terracotta px-6 py-24 text-white lg:px-10 lg:py-32"><div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]"><div><p class="eyebrow text-xs font-bold uppercase text-white/70">Kontakt</p><h2 class="mt-4 font-display text-4xl leading-tight sm:text-5xl">Lassen Sie uns<br>ins Gespräch kommen.</h2><p class="mt-7 max-w-md leading-7 text-white/80">Sie möchten mehr erfahren oder einen Termin vereinbaren? Schreiben Sie mir gerne. Ich freue mich auf Ihre Nachricht.</p><a href="mailto:verhaag.mediation-coaching@web.de" class="mt-8 inline-block break-all text-sm font-bold underline underline-offset-4">verhaag.mediation-coaching@web.de</a></div><form action="#" method="post" class="rounded-2xl bg-white p-6 text-ink shadow-2xl sm:p-9"><div class="grid gap-6 sm:grid-cols-2"><div><label for="name" class="text-sm font-bold">Name</label><input id="name" name="name" required type="text" autocomplete="name" class="mt-2 w-full border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="Ihr Name"></div><div><label for="email" class="text-sm font-bold">E-Mail</label><input id="email" name="email" required type="email" autocomplete="email" class="mt-2 w-full border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="ihre@email.de"></div></div><div class="mt-7"><label for="message" class="text-sm font-bold">Nachricht</label><textarea id="message" name="message" required rows="4" class="mt-2 w-full resize-none border-0 border-b border-ink/20 bg-transparent px-0 py-3 text-sm outline-none focus:border-pine focus:ring-0" placeholder="Worum geht es Ihnen?"></textarea></div><button type="submit" class="mt-8 w-full rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white transition hover:bg-pine">Nachricht senden</button></form></div></section>
+  </main>
+  <section id="impressum" class="bg-paper px-6 py-20 text-ink lg:px-10 lg:py-28">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="mt-4 font-display text-4xl sm:text-5xl">Impressum</h2>
+      <div class="mt-10 grid gap-10 text-sm leading-7 text-ink/75 md:grid-cols-2">
+        <div>
+          <p class="font-bold text-ink">Lisa Verhaag</p>
+          <p>Pfarrer Pohl Straße 7<br>53123 Bonn<br>Deutschland</p>
+          <p class="mt-5">Tel.: +49 176 81024438<br>E-Mail: <a href="mailto:verhaag.mediation-coaching@web.de" class="underline decoration-terracotta underline-offset-4">verhaag.mediation-coaching@web.de</a></p>
+          <p class="mt-5">Umsatzsteuerbefreit (Kleinunternehmerregelung)</p>
+          <p class="mt-5"><span class="font-bold text-ink">Verantwortliche/r i.S.d. § 18 Abs. 2 MStV:</span><br>Lisa Verhaag, Pfarrer Pohl Str. 7, 53123 Bonn</p>
+          <p class="mt-5">Stand: 24.09.2026</p>
+        </div>
+        <div>
+          <h3 class="font-display text-2xl text-ink">Haftung für Inhalte</h3>
+          <p class="mt-3">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten verantwortlich. Wir sind als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+          <h3 class="mt-8 font-display text-2xl text-ink">Urheberrecht</h3>
+          <p class="mt-3">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Sollten Sie auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-ink px-6 py-8 text-white/55 lg:px-10"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 text-xs sm:flex-row"><p>© 2026 Lisa Verhaag · Mediation & Coaching</p><div class="flex gap-5"><a href="#impressum" class="hover:text-white">Impressum</a><a href="#" class="hover:text-white">Datenschutz</a></div></div></footer>
+</body>
+</html>
